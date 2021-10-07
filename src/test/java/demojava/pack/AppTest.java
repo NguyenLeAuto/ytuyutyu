@@ -27,12 +27,12 @@ public class AppTest
      */
     @Test
     public void shouldAnswerWithTrue() throws IOException
-    {     System.out.println("code selenium testing");
+    {     System.out.println("Testcase selenium testing: PASS DEMO");
     WebDriverManager.chromedriver().setup();
     ChromeOptions options = new ChromeOptions();
-   // options.addArguments("--no-sandbox");
-   // options.addArguments("--disable-dev-shm-usage");
-   // options.addArguments("--headless");
+    options.addArguments("--no-sandbox");
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--headless");
     driver = new ChromeDriver(options);
     driver.navigate().to("https://testdev.vetspire.com");
     driver.manage().window().maximize();
