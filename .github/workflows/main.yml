@@ -8,5 +8,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2 # Checkout the code
-    - name: Grant execute permission for gradlew
+    - name: Execute test case
       run: mvn test # give permission to Gradle to run the commands
